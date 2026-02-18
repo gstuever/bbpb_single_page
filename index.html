@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boom Boom Photo Booth | Memories Made in East Texas</title>
+    <style>
+        :root {
+            --gold: #d4af37;
+            --dark: #121212;
+            --light: #ffffff;
+            --accent: #f9f6ee;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            color: #444;
+            background-color: var(--light);
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--gold);
+        }
+        header h1 { font-size: 3rem; margin-bottom: 0; letter-spacing: 2px; }
+        header p { font-size: 1.2rem; font-style: italic; color: var(--gold); }
+        
+        nav {
+            background: var(--dark);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            transition: 0.3s;
+        }
+        nav a:hover { color: var(--gold); }
+
+        .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+        
+        section { padding: 80px 0; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.5rem; color: var(--dark); margin-bottom: 10px; }
+        .section-title hr { width: 60px; border: 2px solid var(--gold); }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: var(--accent);
+            padding: 30px;
+            border-radius: 12px;
+            transition: transform 0.3s;
+            border: 1px solid #eee;
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--gold); }
+        .card h3 { color: var(--dark); margin-top: 0; }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--gold);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .cta-button:hover { background: #000; transform: scale(1.05); }
+
+        .contact-section {
+            background: var(--dark);
+            color: white;
+            padding: 80px 40px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+        .contact-section h2 { color: var(--gold); }
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            box-sizing: border-box;
+        }
+        footer { text-align: center; padding: 40px; font-size: 0.9rem; color: #888; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>BE THE LIFE OF THE PARTY</h1>
+    <p>Premium Photo Booth Experiences for Unforgettable East Texas Events</p>
+    <a href="#contact" class="cta-button">Secure Your Date</a>
+</header>
+
+<nav>
+    <a href="#experience">The Experience</a>
+    <a href="#weddings">Weddings & Events</a>
+    <a href="#packages">Why Us?</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    
+    <section id="experience">
+        <div class="section-title">
+            <h2>More Than Just a Camera</h2>
+            <hr>
+            <p>We don't just take pictures; we create a destination at your event where your guests can let loose and be themselves.</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>Studio Quality</h3>
+                <p>No grainy "selfies" here. We use professional <strong>DSLR cameras</strong> and softbox studio lighting to make sure everyone looks like a movie star.</p>
+            </div>
+            <div class="card">
+                <h3>Instant Gratification</h3>
+                <p>Your guests will have high-speed, smudge-proof prints in their hands in <strong>seconds</strong>—the ultimate party favor that never gets thrown away.</p>
+            </div>
+            <div class="card">
+                <h3>Digital Socializing</h3>
+                <p>Instantly share the fun. Every package includes an online gallery so your guests can download and post their favorite moments immediately.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="weddings" style="background: #fafafa; padding: 60px 20px; border-radius: 20px;">
+        <div class="section-title">
+            <h2>Perfect For Every Celebration</h2>
+            <hr>
+        </div>
+        <div class="grid">
+            <div class="card" style="background: white;">
+                <h3>Weddings</h3>
+                <p>Give your guests a break from the dance floor! Our scrapbooking service allows guests to leave a photo and a heartfelt note, creating a "live" guestbook you'll cherish forever.</p>
+            </div>
+            <div class="card" style="background: white;">
+                <h3>Proms & Formals</h3>
+                <p>Capture the style and the energy. Our sleek, open-air booth fits large groups of friends in one frame, making it the highlight of the night.</p>
+            </div>
+            <div class="card" style="background: white;">
+                <h3>Corporate & Holiday</h3>
+                <p>From Tyler to Shreveport, we bring the fun to the office. Reward your team with a professional setup that builds culture and captures the holiday spirit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages">
+        <div class="section-title">
+            <h2>The "Boom Boom" Difference</h2>
+            <hr>
+        </div>
+        <div class="grid">
+            <div>
+                <h3>Local & Reliable</h3>
+                <p>Based in <strong>Center, Texas</strong>, we know the heartbeat of East Texas. We show up early, dress professionally, and handle everything from setup to teardown.</p>
+            </div>
+            <div>
+                <h3>Unlimited Everything</h3>
+                <p>We don't believe in "pay-per-photo." When you book us, your guests get <strong>unlimited sessions</strong> and unlimited prints for the duration of your rental.</p>
+            </div>
+            <div>
+                <h3>Custom Branding</h3>
+                <p>Hosting a themed wedding? We can customize your photo strips with your names, date, or company logo so the memory is truly yours.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-section">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h2>Let's Get the Party Started</h2>
+                <p>Dates in East Texas fill up fast! Send us a quick note to check your date.</p>
+            </div>
+            <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
+                <div class="grid" style="grid-template-columns: 1fr 1fr;">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <input type="text" name="event_type" placeholder="What kind of event? (Wedding, Birthday, Prom, etc.)">
+                <input type="text" name="date" placeholder="Event Date (MM/DD/YYYY)">
+                <textarea name="message" rows="5" placeholder="Tell us about your vision..."></textarea>
+                <div style="text-align: center;">
+                    <button type="submit" class="cta-button" style="border:none; cursor:pointer;">Check My Date</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Boom Boom Photo Booth | Serving Center, Tyler, Longview, Nacogdoches, and Shreveport.</p>
+    <p><em>Where Quality Meets the Party.</em></p>
+</footer>
+
+</body>
+</html>
